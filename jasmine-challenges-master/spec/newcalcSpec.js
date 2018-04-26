@@ -89,7 +89,7 @@ describe("Extra calculator functions", function() {
                 
                 describe("areaCylinder",function(){
                     it("should return areaCylinder",function(){
-                        expect(areaCylinder(2*3.14*1*1+2*3.14*1*1)).toBe(12.56);
+                        expect(areaCylinder(2,2)).toBe(50.27);
                     })
                 })
 

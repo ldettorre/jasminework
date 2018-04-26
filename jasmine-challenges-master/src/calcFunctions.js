@@ -58,28 +58,33 @@ function cubeMe(n) {
 
 
 function aOT(n1, n2, n3) {
-    if (typeof(n1) == "number" && typeof(n2) == "number" && typeof(n3) == "number"){
+    if (typeof(n1) == "number" && typeof(n2) == "number" && typeof(n3) == "number") {
         return Number = (n1 * n2 / n3);
-    } else if (typeof(n1) == "string" || typeof(n2) == "string" || typeof(n3) == "string") {
+    }
+    else if (typeof(n1) == "string" || typeof(n2) == "string" || typeof(n3) == "string") {
         alert("Values must be numbers")
 
     }
 }
 
 function yearsLeft(n1) {
-    if(typeof(n1) == "number"){
-        if (n1 > 2018){
-            alert("Value must be under 2018")}
-            else
-        
-        return (2018 - n1);
-    } else if (typeof(n1)=="string"){
+    if (typeof(n1) == "number") {
+        if (n1 > 2018) {
+            alert("Value must be under 2018")
+        }
+        else
+
+            return (2018 - n1);
+    }
+    else if (typeof(n1) == "string") {
         alert("Numbers only please!")
     }
 }
 
-function areaCylinder(n1,n2){
-    if(typeof(n1) == "number" && typeof(n2)=="number"){
-        return Number = (2*3.14*n1*n2+2*3.14*n1*n1)
+function areaCylinder(n1, n2) {
+    if (typeof(n1) == "number" && typeof(n2) == "number") {
+        let result = (2 * 3.14 * n1 * n2 + 2 * 3.14 * n1 * n1);
+        return (result.toFixed(2));
+        
     }
-}
+    }
