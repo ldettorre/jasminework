@@ -68,6 +68,10 @@ function aOT(n1, n2, n3) {
 
 function yearsLeft(n1) {
     if(typeof(n1) == "number"){
+        if (n1 > 2018){
+            alert("Value must be under 2018")}
+            else
+        
         return (2018 - n1);
     } else if (typeof(n1)=="string"){
         alert("Numbers only please!")

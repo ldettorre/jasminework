@@ -80,6 +80,11 @@ describe("Extra calculator functions", function() {
                         yearsLeft("string");
                         expect(window.alert).toHaveBeenCalledWith("Numbers only please!");
                     })
+                    it("should alert if number is above 2018",function(){
+                        spyOn(window,"alert");
+                        yearsLeft(2050);
+                        expect(window.alert).toHaveBeenCalledWith("Value must be under 2018");
+                    })
                 })
 
             }); //end of extra calc functions
