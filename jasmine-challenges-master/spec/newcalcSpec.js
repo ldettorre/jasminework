@@ -86,5 +86,11 @@ describe("Extra calculator functions", function() {
                         expect(window.alert).toHaveBeenCalledWith("Value must be under 2018");
                     })
                 })
+                
+                describe("areaCylinder",function(){
+                    it("should return areaCylinder",function(){
+                        expect(areaCylinder(2*3.14*1*1+2*3.14*1*1)).toBe(12.56);
+                    })
+                })
 
             }); //end of extra calc functions

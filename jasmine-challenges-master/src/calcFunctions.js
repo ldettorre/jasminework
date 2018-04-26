@@ -77,3 +77,9 @@ function yearsLeft(n1) {
         alert("Numbers only please!")
     }
 }
+
+function areaCylinder(n1,n2){
+    if(typeof(n1) == "number" && typeof(n2)=="number"){
+        return Number = (2*3.14*n1*n2+2*3.14*n1*n1)
+    }
+}
